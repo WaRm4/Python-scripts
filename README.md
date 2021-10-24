@@ -13,4 +13,4 @@ You can download it [there](https://pypi.org/project/pip/)
 # Troubleshooting
 
 I created those scripts on Windows using Python 3.9.
-You might get some errors if you try running it on other version of Python or maybe on other OS.
+You might get some errors if you try running it on other versions of Python or maybe on other OS.
