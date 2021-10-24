@@ -3,6 +3,8 @@ A set of useful (or not) Python scripts created by myself.
 
 # Requirements
 - You need to have a proper installation of Python 3
+
+
 You can download it [there](https://www.python.org/downloads/)
 
 - You might also need to install some libraries using "pip" for example
