@@ -5,7 +5,7 @@
 
 from pytesseract import *   
 from os import listdir, mkdir
-from os.path import isfile, exists, abspath
+from os.path import exists, abspath
 import re
 import time
 
@@ -14,14 +14,15 @@ import time
 pytesseract.tesseract_cmd =r'C:\Program Files\Tesseract-OCR\tesseract.exe'                   
 
 # Source directory
-srcDir = "./"
+srcDir = "./src/"
 # Output directory
 outDir = "./out"
 # Regular expression to select files
 regex = "(.*bmp)|(.*png)|(.*jpg)"
 # every file in srcDir that respect the regular expression
-files = [f for f in listdir(srcDir) if (isfile(f) and re.search(regex, f) != None)]
+files = [f for f in listdir(srcDir) if re.search(regex, f) != None]
 
+print(files)
 if not exists(outDir):
     mkdir(outDir)
 
@@ -30,7 +31,7 @@ print("Starting conversion...\n(of all image files located in " + abspath(srcDir
 if len(files) > 0:
     for f in files:
         print("Processing " + f + "...")
-        result = pytesseract.image_to_string(f)
+        result = pytesseract.image_to_string(srcDir + f)
         outFile = open(outDir + "/" + f.rsplit('.')[0] + ".txt", "w")
         outFile.write(result)
         outFile.close()
@@ -40,4 +41,4 @@ if len(files) > 0:
 else:
     print("There are no image files in " + abspath(srcDir))
 
-time.sleep(0.7)
+input("Press any key to terminate the program")
