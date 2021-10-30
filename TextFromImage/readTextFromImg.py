@@ -7,7 +7,6 @@ from pytesseract import *
 from os import listdir, mkdir
 from os.path import exists, abspath
 import re
-import time
 
 # If you don't have tesseract executable in your PATH, include the following:
 # pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
