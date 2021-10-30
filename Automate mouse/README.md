@@ -6,7 +6,7 @@ Feel free to change the variable in the files, for example to change the key to 
 For both of these scripts, you will need to install both mouse and keyboard libraries.
 
 
-&nbsp;&nbsp;&nbsp;Links are avaible here : [mouse](https://pypi.org/project/mouse/), [keyboard](https://pypi.org/project/keyboard/).
+&nbsp;&nbsp;&nbsp;Links are available here : [mouse](https://pypi.org/project/mouse/), [keyboard](https://pypi.org/project/keyboard/).
 
 # AutoMouseClicker
 
