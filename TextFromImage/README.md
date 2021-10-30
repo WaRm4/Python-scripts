@@ -21,3 +21,13 @@ For example : ![Measure-Command example](./Markdown-Images/Measure-Command_examp
 ### Without threading
 
 It takes approximately **13,64** seconds to process every sample file without processing every file in different threads. 
+
+### With threading 
+
+It takes approximately **7,854** seconds to process every sample file when each one is processed in a different thread.
+
+### Conclusion
+
+Adding threads to my program is very useful when processing several files at a time as it divided the processing time of the program by about 2 on the sample files.
+
+Unfortunately, we can't faster the process of only one file, it is related to the pytesseract function's performances.
