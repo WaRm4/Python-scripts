@@ -33,7 +33,7 @@ def job(fi):
     outFile.write(result)
     outFile.close()
 
-print("Starting conversion...\n(of all image files located in " + abspath(srcDir) + "\n")
+print("Starting conversion...\n(of all image files located in " + abspath(srcDir) + ")\n")
 
 threads = []
 if len(files) > 0:
