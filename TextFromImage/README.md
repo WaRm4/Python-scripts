@@ -16,7 +16,9 @@ By default, sources are on the "./src" directory and the output will be on the "
 
 To test the speed performances, I used a powershell prompt and the command ```Measure-Command { py name_of_your_script }```.
 
-For example : ![Measure-Command example](./Markdown-Images/Measure-Command_example.png)
+For example : 
+
+![Measure-Command example](./Markdown-Images/Measure-Command_example.png)
 
 ### Without threading
 
